@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font: normal 13pt Arial
+        }    
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <P>aula nove sobre <strong>DOM</strong>.</P>
+    <div id='msg'> p paragrafo, h1 titulo, div divisao??</div>
+<script>
+    var p1 = window.document.getElementsByTagName('p')[0]
+    var body = document.body
+    //var d = window.document.getElementById('msg')
+    //d.style.background = 'green'
+    //d.innerText = ' bundao'
+    var d = document.querySelector('div#msg')//com querySelector Id é # (div#NOME DO ID) e class é . (div.NOME DO CLASS)
+    d.style.color = 'green'
+    d.style.background = 'blue' 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fronteira</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fronteira do BRASIL!</h1>
+    Onde você nasceu? <input type="text" name="txtpais" id="txtpais">!
+    <input type="button" value="verificar" onclick="Verificar()">
+    <div id="res">  </div>
+
+
+    <script>
+        function Verificar() {
+        var txtp = document.getElementById('txtpais')
+        var res = document.getElementById('res')
+        res.innerHTML = `<p>seu pais de origem é ${txtp.value} </p>`
+        if (txtp.value == 'brasil') {
+            res.innerHTML += '<p>seja bem vindo</p>'
+        }
+        }
+
+    </script>
+</body>
+</html>

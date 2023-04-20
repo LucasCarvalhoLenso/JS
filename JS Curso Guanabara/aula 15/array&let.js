@@ -1,0 +1,10 @@
+// OS COMENTARIO TAO FORA DA TELA → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → → →    //array e uma variavel que pode aemazenar varios valores (só colocar VARIAVEL = [] em vez de VARIAVEL = ())
+let num = [9, 3, 0]                                                                                                                    //let é uma variavel que no existe no bloco criado
+num[3] = 'bom dia'                                                                                                                     //VARIAVEL[POSIÇAO] = VALOR serve pra mudar o valor da array mas especificando qual posiçao mudar se colocar o numero de um espaço q ainda nao existe ele vai criar essa posiçao e setar o valor
+num.push('aeaeaeaeeaeeeaeeaeaeeeeaeeaeea')                                                                                             //VARIAVEL.push(VALOR) serve pra criar automaticamente uma posiçao nova no final da array e setar o valor no mesmo
+num.sort()                                                                                                                             //VARIAVEL.sort() organizaa os valores em ordem crescente e ou alfabetica
+console.log(`${num}`)
+console.log(`${num[4]}`)                                                                                                               //VARIAVEL[POSIÇAO] serve pra escolher uma posiçao especifico
+console.log(`${num.length}`)                                                                                                           //VARIAVEL.length é o comprimento ou o numero de espaços que tem na array
+let pos = num.indexOf(0)                                                                                                               //VARIAVEL.indexOf(VALOR) serve pra procurar o valor citado e mostrar a posiçao que ele esta, se o valor citado não existir mostra como -1
+console.log(`posição ${pos}`)
